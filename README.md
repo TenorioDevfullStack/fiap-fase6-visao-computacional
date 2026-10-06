@@ -76,9 +76,7 @@ Esse resultado evidenciou a importância da adaptação do modelo ao domínio do
 
 O notebook principal contém todo o processo de preparação do dataset, treinamento, validação, testes, métricas, gráficos e análise crítica.
 
-**Arquivo:** `LeandroTenorio_rm572083_pbl_fase6.ipynb`
-
-> Após o upload do notebook para este repositório, o link direto deverá ser mantido nesta seção.
+**Arquivo:** [`LeandroTenorio_rm572083_pbl_fase6.ipynb`](https://github.com/TenorioDevfullStack/fiap-fase6-visao-computacional/blob/main/LeandroTenorio_rm572083_pbl_fase6.ipynb)
 
 ## Vídeo demonstrativo
 
