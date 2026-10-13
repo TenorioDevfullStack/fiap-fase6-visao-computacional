@@ -69,8 +69,15 @@ Esse resultado evidenciou a importância da adaptação do modelo ao domínio do
 | Resultado no teste | 8/8 corretas | 0/8 corretas nas classes desejadas | 8/8 corretas |
 | Principal métrica | mAP50-95 = 0,920 | Não aplicável ao domínio | Accuracy = 1,000 |
 | Tempo médio de inferência | ~147 ms/imagem | ~279,4 ms/imagem | ~300,03 ms/imagem |
+| Necessidade de treinamento específico | Sim, com fine-tuning no dataset rotulado | Não | Sim, treinamento a partir do dataset do projeto |
+| Tempo/esforço de customização | Médio: exige rotulação, configuração e treinamento | Baixo: uso imediato do modelo pré-treinado | Alto: exige organização por classes, definição da arquitetura, treinamento e avaliação |
+| Facilidade de uso e integração | Alta após o treinamento; entrega diretamente classe, confiança e bounding box | Muito alta para uso genérico, porém limitada quando as classes do domínio não existem no treinamento original | Boa para classificação simples, mas exige lógica adicional quando é necessário localizar objetos |
 | Localização do objeto | Sim | Sim | Não |
 | Principal limitação | Dataset pequeno | Não conhece o domínio | Overfitting |
+
+Os **tempos totais de treinamento** não foram utilizados como métrica numérica de comparação porque não foram registrados de forma padronizada entre os experimentos. Por isso, o custo de treinamento e customização foi comparado de forma **qualitativa**, considerando as etapas necessárias em cada abordagem.
+
+A comparação mostra que a facilidade de uso isoladamente não é suficiente para definir a melhor solução. O YOLO tradicional possui integração imediata, mas seu conjunto de classes não representa adequadamente o problema. A CNN apresentou bom desempenho de classificação, porém não informa a posição do objeto na imagem. Para este projeto, o YOLO customizado apresentou o melhor equilíbrio entre adaptação ao domínio, localização e desempenho.
 
 ## Notebook
 
@@ -91,7 +98,8 @@ O vídeo apresenta a estrutura do projeto, dataset utilizado, treinamento e resu
 - poucos ambientes e condições de captura;
 - conjuntos de validação e teste pequenos;
 - sinais de overfitting na CNN;
-- tempos de inferência dependentes do ambiente do Google Colab.
+- tempos de inferência dependentes do ambiente do Google Colab;
+- tempos totais de treinamento não foram medidos sob um protocolo único e, portanto, não são comparados numericamente.
 
 ## Conclusão
 
