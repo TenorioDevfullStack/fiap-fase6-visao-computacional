@@ -80,16 +80,9 @@ O notebook principal contém todo o processo de preparação do dataset, treinam
 
 ## Vídeo demonstrativo
 
-O vídeo deve demonstrar, em até 5 minutos:
+O vídeo apresenta a estrutura do projeto, dataset utilizado, treinamento e resultados do YOLO customizado, CNN treinada do zero, comparação com o YOLO tradicional e as principais conclusões.
 
-- estrutura do projeto;
-- dataset utilizado;
-- treinamento e resultados do YOLO customizado;
-- CNN treinada do zero;
-- comparação com o YOLO tradicional;
-- principais conclusões.
-
-**Link do vídeo no YouTube (não listado):** _adicionar após a gravação_.
+**Vídeo no YouTube (não listado):** [https://youtu.be/SOUztN6qEG0](https://youtu.be/SOUztN6qEG0)
 
 ## Limitações
 
